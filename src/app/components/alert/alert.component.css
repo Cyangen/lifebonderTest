@@ -1,0 +1,16 @@
+.alert{
+  position: absolute;
+  margin: 0;
+  width: 30vw;
+  border-radius: 0;
+  border: 0;
+  top: 0;
+  left: 35%;
+  color: #6F8695;
+  text-align: center;
+  z-index: 1000;
+}
+
+.alert-success, .alert-danger{
+  color: #6F8695;
+}
