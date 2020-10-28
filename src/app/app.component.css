@@ -56,6 +56,10 @@ p{
   border-color: #afc3d0;
 }
 
+.form__submit:hover{
+  background-color: #6F8695;
+}
+
 .form__submit:active{
   background-color: #6F8695 !important;
   border-color: #6F8695 !important;
