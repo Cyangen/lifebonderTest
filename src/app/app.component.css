@@ -1,0 +1,77 @@
+p{
+  margin-bottom: .5rem;
+}
+
+.form{
+  padding: 1.3rem;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 1px 10px 8px #EBEDF3;
+  border-radius: 5px;
+}
+
+.form__title{
+  padding: 1rem 0
+}
+
+.form__thoughts-input{
+  border: none;
+  margin-top: 1rem;
+  resize: none;
+}
+
+.form__thoughts-input:focus{
+  border-color: transparent;
+  outline: none !important;
+}
+
+.form__profile-image{
+  border-radius: 50%;
+}
+
+.upload-label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #afc3d0;
+  width: 100%;
+  min-height: 160px;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.upload-icon{
+  padding: 2rem;
+  font-size: 4rem;
+}
+
+.form-control:focus{
+  box-shadow: 0 0 0 0.2rem rgba(175, 195, 208, 0.40);
+  border-color:rgba(175, 195, 208, 0.40);
+}
+
+.form__submit{
+  background-color: #afc3d0;
+  border-color: #afc3d0;
+}
+
+.form__submit:active{
+  background-color: #6F8695 !important;
+  border-color: #6F8695 !important;
+}
+
+.form__submit:focus{
+  background-color: #6F8695 !important;
+  border-color: #6F8695 !important;
+}
+
+
+input.ng-invalid.ng-touched{
+  border: 2px solid #D57474;
+}
+
+.imagePreview{
+  max-height: 170px;
+  overflow: hidden;
+}
