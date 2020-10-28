@@ -10,6 +10,8 @@ import { AlertService } from './services/alert.service';
 export class AppComponent implements OnInit {
   imageURL: string;
   sharingType = 0;
+  formValid = false;
+  userId = '303947092';
 
   constructor(private alertService: AlertService){}
 
@@ -30,10 +32,12 @@ export class AppComponent implements OnInit {
   onSubmit(form: NgForm){
     console.log(form.value);
 
-    if ( form.valid){
+    if (form.valid){
       this.alertService.setMessage({message: 'Post created successfully!!', type: 'alert-success'});
+      this.formValid = true;
     } else {
       this.alertService.setMessage({message: 'Error! You have to fill all required fields!', type: 'alert-danger'});
+      this.formValid = false;
     }
   }
 

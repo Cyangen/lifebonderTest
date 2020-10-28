@@ -33,7 +33,7 @@
         <!--text input-->
         <div class="row">
           <div class="col-12">
-            <textarea ngModel class="form__thoughts-input" type="text" name="thoughts-input" id="thoughts-input" rows="1" cols="50" placeholder="Jonathan, what are you thinking?"></textarea>
+            <textarea ngModel class="form__thoughts-input" type="text" name="thoughts" id="thoughts-input" rows="1" cols="50" placeholder="Jonathan, what are you thinking?"></textarea>
           </div>
         </div>
 
@@ -43,7 +43,7 @@
             <label for="upload-photo" class="upload-label">
               <i class="far fa-images upload-icon"></i>
             </label>
-            <input ngModel type="file" name="photo" id="upload-photo" accept="image/*" (change)="showPreview($event)" />
+            <input type="file" name="photo" id="upload-photo" accept="image/*" (change)="showPreview($event)" />
           </div>
         </div>
 
@@ -84,6 +84,15 @@
         </div>
 
       </form>
+    </div>
+
+    <div style="overflow: hidden;margin-top: 30px;" *ngIf="formValid" class="col-12 form">
+      <p>keywords: {{ form.value.keywords }}</p>
+      <p>location: {{ form.value.location }}</p>
+      <p>photo: {{ form.value.image }}</p>
+      <p>sharingType: {{ form.value.sharingType }}</p>
+      <p>thoughts: {{ form.value.thoughts }}</p>
+      <p>userId: {{ userId }}</p>
     </div>
   </div>
 </div>
